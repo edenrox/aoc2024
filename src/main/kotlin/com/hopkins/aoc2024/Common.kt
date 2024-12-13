@@ -15,3 +15,12 @@ data class Point2d(val x: Int, val y: Int) {
     fun absolute(): Point2d =
         Point2d(abs(x), abs(y))
 }
+
+object StraightDirections {
+    val UP = Point2d(0, -1)
+    val DOWN = Point2d(0, 1)
+    val LEFT = Point2d(-1, 0)
+    val RIGHT = Point2d(1, 0)
+
+    val ALL = listOf(UP, DOWN, LEFT, RIGHT)
+}
