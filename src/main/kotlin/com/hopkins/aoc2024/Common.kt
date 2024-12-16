@@ -14,6 +14,10 @@ data class Point2d(val x: Int, val y: Int) {
 
     fun absolute(): Point2d =
         Point2d(abs(x), abs(y))
+
+    companion object {
+        val ORIGIN = Point2d(0, 0)
+    }
 }
 
 object StraightDirections {
