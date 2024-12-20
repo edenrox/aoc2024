@@ -14,7 +14,6 @@ fun main(args: Array<String>) {
         patterns.count { pattern ->
             val cache = mutableSetOf<String>()
             val canMake = canMake(towels, pattern, cache)
-            println("P: $pattern CanMake: $canMake")
             canMake
         }
     println("Count: $count")
